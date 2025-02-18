@@ -5,14 +5,14 @@
 <h1 align="center">Free TikTok ViewBot 🚀</h1>
 
 ## 🔥 ~ Features
-```sh-session
+```js
 - Fast
 - Easy to use
 ```
 
 ## 🚀 ~ Setup
 
-```sh-session
+```js
 > Download file
 > install requirements.txt
 > Run main.py
@@ -20,7 +20,7 @@
 ```
 
 ## 🎉 ~ Upcoming/updates
-```sh-session
+```js
 - Automatic captcha solver (if 20 stars)
 - Comments Hearts
 - Favorites Bot
