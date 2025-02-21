@@ -35,18 +35,14 @@ class Rei:
             captcha_input = WebDriverWait(self.driver, 60).until(
                 EC.presence_of_element_located((By.XPATH, '/html/body/div[5]/div[2]/form/div/div/div/input'))
             )
-
             captcha_code = input(f"[{Fore.CYAN}?{Fore.RESET}] Enter CAPTCHA Code: ")
-
             captcha_input.send_keys(captcha_code)
-
+            
             submit_button = self.driver.find_element(By.XPATH, '/html/body/div[5]/div[2]/form/div/div/div/div/button')
             submit_button.click()
-
+            
             print(f"[{Fore.GREEN}+{Fore.RESET}] CAPTCHA solved successfully!")
-
             time.sleep(5)
-
         except Exception as e:
             print(f"{Fore.RED}Error solving CAPTCHA: {e}{Fore.RESET}")
 
@@ -91,7 +87,7 @@ class Rei:
 
             while True:
                 self.send_views()
-                time.sleep(120)
+                time.sleep(20)
         except Exception as e:
             print(f"{Fore.RED}Error: {e}{Fore.RESET}")
         finally:
